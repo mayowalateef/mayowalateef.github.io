@@ -1,3 +1,184 @@
----
-layout: resume
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .navbar .site-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 50px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .main-content {
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar .title {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .contact-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .contact-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-links i {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .content h1 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .highlight {
+            font-style: italic;
+        }
+        
+        .research-question {
+            margin-bottom: 30px;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- You can add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="site-title">Your Name</a>
+        <div class="nav-links">
+            <a href="#publications">Publications</a>
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">CV</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar with profile picture and contact info -->
+        <div class="sidebar">
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-image">
+            <h2>Your Name</h2>
+            <p class="title">Your Title/Position<br>Your Institution/Company</p>
+            
+            <ul class="contact-links">
+                <li><i class="fas fa-map-marker-alt"></i> Your Location</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">Email</a></li>
+                <li><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Your_Profile" target="_blank">ResearchGate</a></li>
+                <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/yourusername" target="_blank">Github</a></li>
+                <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=your_id" target="_blank">Google Scholar</a></li>
+                <li><i class="fas fa-id-card"></i> <a href="https://orcid.org/your-id" target="_blank">ORCID</a></li>
+            </ul>
+        </div>
+        
+        <!-- Main content area -->
+        <div class="content">
+            <h1>About me</h1>
+            <p>
+                Welcome! I am a [your profession/field] researching <span class="highlight">[your primary research focus]</span> as performance indicators of <span class="highlight">[specific area]</span> using <span class="highlight">[your method/approach]</span>.
+            </p>
+            <p>
+                Currently, I [your current position/role] at [your institution/company]. I completed my [highest degree] in [field] at [university] in [year], [previous education details if applicable].
+            </p>
+            
+            <p>
+                My research explores [brief description of your research focus]. I am specifically interested in [more specific research interests]. I leverage [tools/methods you use] to [what you aim to achieve with your research].
+            </p>
+            
+            <h2>My research answers three overarching questions:</h2>
+            
+            <div class="research-question">
+                <h3>1. [First Research Question]</h3>
+                <p>
+                    [Description of your first research focus area and explanation of the work you do related to this question]
+                </p>
+            </div>
+            
+            <div class="research-question">
+                <h3>2. [Second Research Question]</h3>
+                <p>
+                    [Description of your second research focus area and explanation of the work you do related to this question]
+                </p>
+            </div>
+            
+            <div class="research-question">
+                <h3>3. [Third Research Question]</h3>
+                <p>
+                    [Description of your third research focus area and explanation of the work you do related to this question]
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
