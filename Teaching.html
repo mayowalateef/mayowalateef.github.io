@@ -1,86 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching - Mayowa Lateef</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 2rem;
-    }
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      padding: 0;
-    }
-    header nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Mayowa Lateef</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+        
+        .navbar .site-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 50px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .main-content {
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar .title {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .contact-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .contact-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-links i {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .content h1 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .teaching-item {
+            margin-bottom: 40px;
+        }
+        
+        .teaching-title {
+            font-size: 1.3em;
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+        
+        .teaching-position {
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .teaching-details ul {
+            padding-left: 20px;
+        }
+        
+        .teaching-details li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="cv.html">CV</a></li>
-      </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="site-title">Mayowa Lateef</a>
+        <div class="nav-links">
+            <a href="publications.html">Publications</a>
+            <a href="Research.html">Research</a>
+            <a href="Teaching.html">Teaching</a>
+            <a href="Cv.html">CV</a>
+        </div>
     </nav>
-    <h1>Teaching Experience</h1>
-  </header>
-
-  <main>
-    <section>
-      <h2>May 2023 – Present<br>Federal University of Technology Akure</h2>
-      <p><strong>Role:</strong> <em>Teaching and Research Assistant</em></p>
-      <ul>
-        <li>Assisted in undergraduate course preparation and delivery in areas such as GIS, Remote Sensing, and Environmental Modeling.</li>
-        <li>Guided student practicals and lab sessions, ensuring academic support and clarity on course content.</li>
-        <li>Contributed to research activities including field data collection, analysis, and report preparation.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Sep 2021 – August 2022<br>Saint Barnabas Senior Secondary School (NYSC)</h2>
-      <p><strong>Role:</strong> <em>Geography Teacher</em></p>
-      <ul>
-        <li>I taught the students Geography and Urban development.</li>
-        <li>I prepared detailed lesson plans and monitored student performances and academic progress.</li>
-        <li>I have successfully mentored the students and orientated them on careers and prospects in life.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Dec 2019 – April 2020<br>God First Academy Oka (Volunteering)</h2>
-      <p><strong>Role:</strong> <em>Basic School Teacher</em></p>
-      <ul>
-        <li>I sensitized the students about SARS-CoV-2 and ensured they adhered to the United Nations and National rules to avoid its spread and transmission.</li>
-        <li>I taught and prepared detailed and comprehensive lesson plans and study materials for the academic works.</li>
-        <li>Enlightened the students on how to prevent cross-infection of deadly viruses and I created a student group that met weekly to implement these routine guidelines in the school.</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p style="text-align:center">&copy; 2025 Mayowa Lateef</p>
-  </footer>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar with profile picture and contact info -->
+        <div class="sidebar">
+            <img src="IMG_9935.jpg" alt="Mayowa Lateef" class="profile-image">
+            <h2>Mayowa Lateef</h2>
+            <p class="title">Earth Observation Researcher<br>University of Basilicata, Italy</p>
+            
+            <ul class="contact-links">
+                <li><i class="fas fa-map-marker-alt"></i> Italy</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:Mayowa.lateef@studenti.unibas.it">Email</a></li>
+                <li><i class="fas fa-phone"></i> +39 3446865246</li>
+                <li><i class="fas fa-id-card"></i> <a href="https://orcid.org/0009-0006-8081-0864" target="_blank">ORCID</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/mayowalateef" target="_blank">Github</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mayowa-lateef-824008162" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        
+        <!-- Main content area -->
+        <div class="content">
+            <h1>Teaching Experience</h1>
+            
+            <div class="teaching-item">
+                <h2 class="teaching-title">Federal University of Technology Akure</h2>
+                <p><strong>May 2023 – Present</strong></p>
+                <p class="teaching-position">Teaching and Research Assistant</p>
+                <div class="teaching-details">
+                    <ul>
+                        <li>Assisted in undergraduate course preparation and delivery in areas such as GIS, Remote Sensing, and Environmental Modeling.</li>
+                        <li>Guided student practicals and lab sessions, ensuring academic support and clarity on course content.</li>
+                        <li>Contributed to research activities including field data collection, analysis, and report preparation.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="teaching-item">
+                <h2 class="teaching-title">Saint Barnabas Senior Secondary School (NYSC)</h2>
+                <p><strong>September 2021 – August 2022</strong></p>
+                <p class="teaching-position">Geography Teacher</p>
+                <div class="teaching-details">
+                    <ul>
+                        <li>I taught the students Geography and Urban development.</li>
+                        <li>I prepared detailed lesson plans and monitored student performances and academic progress.</li>
+                        <li>I have successfully mentored the students and orientated them on careers and prospects in life.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="teaching-item">
+                <h2 class="teaching-title">God First Academy Oka (Volunteering)</h2>
+                <p><strong>December 2019 – April 2020</strong></p>
+                <p class="teaching-position">Basic School Teacher</p>
+                <div class="teaching-details">
+                    <ul>
+                        <li>I sensitized the students about SARS-CoV-2 and ensured they adhered to the United Nations and National rules to avoid its spread and transmission.</li>
+                        <li>I taught and prepared detailed and comprehensive lesson plans and study materials for the academic works.</li>
+                        <li>Enlightened the students on how to prevent cross-infection of deadly viruses and I created a student group that met weekly to implement these routine guidelines in the school.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="text-align:center; margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+        <p>&copy; 2025 Mayowa Lateef</p>
+    </footer>
 </body>
 </html>
