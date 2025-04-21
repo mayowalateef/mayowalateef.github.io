@@ -17,10 +17,30 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .gallery-item {
+      position: relative;
+    }
+    .gallery-caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
     }
     h1 {
       text-align: center;
       margin-top: 2rem;
+    }
+    .research-intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      text-align: center;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -30,22 +50,101 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html">Research</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
     </nav>
     <h1>Research Gallery</h1>
   </header>
-
+  
   <main>
+    <div class="research-intro">
+      <p>Welcome to my research gallery. Here you can explore visual representations of my work in Earth Observation, GIS, Remote Sensing, and Environmental Modeling.</p>
+    </div>
+    
     <section class="gallery">
-      <img src="image/IMG_9935.jpg" alt="Research Image 1">
-      <!-- Add more image elements here if more images are uploaded -->
+      <!-- Using the exact filenames from your GitHub repository -->
+      <div class="gallery-item">
+        <img src="image/171546605111.jpeg" alt="Earth Observation Research 1">
+        <p class="gallery-caption">Earth Observation Analysis</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/171573120710.jpeg" alt="Remote Sensing Data">
+        <p class="gallery-caption">Remote Sensing Data Visualization</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/171588712329.jpeg" alt="GIS Mapping">
+        <p class="gallery-caption">GIS Spatial Analysis</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/171655628495.jpeg" alt="Environmental Modeling">
+        <p class="gallery-caption">Environmental Modeling Results</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/171920973260.jpeg" alt="Field Research">
+        <p class="gallery-caption">Field Research Data Collection</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/172108396594.jpeg" alt="Data Analysis">
+        <p class="gallery-caption">Data Analysis Visualization</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/172618268059.jpeg" alt="Research Project">
+        <p class="gallery-caption">Research Project Findings</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/172963502578.jpeg" alt="Environmental Data">
+        <p class="gallery-caption">Environmental Data Collection</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/173067518044.jpeg" alt="Geospatial Analysis">
+        <p class="gallery-caption">Geospatial Analysis Results</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/173090328379.jpeg" alt="Carbon Monitoring">
+        <p class="gallery-caption">Carbon Monitoring Research</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/173166826708.jpeg" alt="Satellite Imagery">
+        <p class="gallery-caption">Satellite Imagery Processing</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/173193415924.jpeg" alt="Climate Research">
+        <p class="gallery-caption">Climate Research Analysis</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/174410843088.jpeg" alt="Earth Science">
+        <p class="gallery-caption">Earth Science Research Project</p>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="image/174410843184.jpeg" alt="Environmental Assessment">
+        <p class="gallery-caption">Environmental Impact Assessment</p>
+      </div>
     </section>
   </main>
-
+  
   <footer>
-    <p style="text-align:center">&copy; 2025 Mayowa Lateef</p>
+    <p>&copy; 2025 Mayowa Lateef</p>
+    <div class="contact-links">
+      <a href="mailto:email@example.com"><i class="email-icon"></i>Email</a>
+      <a href="https://github.com/mayowalateef"><i class="github-icon"></i>Github</a>
+      <a href="https://linkedin.com/in/mayowa-lateef"><i class="linkedin-icon"></i>LinkedIn</a>
+      <a href="https://orcid.org/your-orcid"><i class="orcid-icon"></i>ORCID</a>
+    </div>
   </footer>
 </body>
 </html>
