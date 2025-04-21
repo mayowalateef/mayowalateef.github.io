@@ -1,152 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research - Mayowa Lateef</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      object-fit: cover;
-      aspect-ratio: 4/3;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    .gallery-item {
-      position: relative;
-    }
-    .gallery-caption {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #555;
-      text-align: center;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .research-intro {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      text-align: center;
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Mayowa Lateef</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+        
+        .navbar .site-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 50px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .main-content {
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar .title {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .contact-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .contact-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-links i {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .content h1 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .research-intro {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+        .gallery-caption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html" class="active">Research</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="cv.html">CV</a></li>
-      </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="site-title">Mayowa Lateef</a>
+        <div class="nav-links">
+            <a href="publications.html">Publications</a>
+            <a href="Research.html">Research</a>
+            <a href="Teaching.html">Teaching</a>
+            <a href="Cv.html">CV</a>
+        </div>
     </nav>
-    <h1>Research Gallery</h1>
-  </header>
-  
-  <main>
-    <div class="research-intro">
-      <p>Welcome to my research gallery. Here you can explore visual representations of my work in Earth Observation, GIS, Remote Sensing, and Environmental Modeling.</p>
-    </div>
     
-    <section class="gallery">
-      <!-- Using direct filenames in root directory -->
-      <div class="gallery-item">
-        <img src="171546605111.jpeg" alt="Earth Observation Research 1">
-        <p class="gallery-caption">Earth Observation Analysis</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="171573120710.jpeg" alt="Remote Sensing Data">
-        <p class="gallery-caption">Remote Sensing Data Visualization</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="171588712329.jpeg" alt="GIS Mapping">
-        <p class="gallery-caption">GIS Spatial Analysis</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="171655628495.jpeg" alt="Environmental Modeling">
-        <p class="gallery-caption">Environmental Modeling Results</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="171920973260.jpeg" alt="Field Research">
-        <p class="gallery-caption">Field Research Data Collection</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="172108396594.jpeg" alt="Data Analysis">
-        <p class="gallery-caption">Data Analysis Visualization</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="172618268059.jpeg" alt="Research Project">
-        <p class="gallery-caption">Research Project Findings</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="172963502578.jpeg" alt="Environmental Data">
-        <p class="gallery-caption">Environmental Data Collection</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="173067518044.jpeg" alt="Geospatial Analysis">
-        <p class="gallery-caption">Geospatial Analysis Results</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="173090328379.jpeg" alt="Carbon Monitoring">
-        <p class="gallery-caption">Carbon Monitoring Research</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="173166826708.jpeg" alt="Satellite Imagery">
-        <p class="gallery-caption">Satellite Imagery Processing</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="173193415924.jpeg" alt="Climate Research">
-        <p class="gallery-caption">Climate Research Analysis</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="174410843088.jpeg" alt="Earth Science">
-        <p class="gallery-caption">Earth Science Research Project</p>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="174410843184.jpeg" alt="Environmental Assessment">
-        <p class="gallery-caption">Environmental Impact Assessment</p>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2025 Mayowa Lateef</p>
-    <div class="contact-links">
-      <a href="mailto:email@example.com"><i class="email-icon"></i>Email</a>
-      <a href="https://github.com/mayowalateef"><i class="github-icon"></i>Github</a>
-      <a href="https://linkedin.com/in/mayowa-lateef"><i class="linkedin-icon"></i>LinkedIn</a>
-      <a href="https://orcid.org/your-orcid"><i class="orcid-icon"></i>ORCID</a>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar with profile picture and contact info -->
+        <div class="sidebar">
+            <img src="IMG_9935.jpg" alt="Mayowa Lateef" class="profile-image">
+            <h2>Mayowa Lateef</h2>
+            <p class="title">Earth Observation Researcher<br>University of Basilicata, Italy</p>
+            
+            <ul class="contact-links">
+                <li><i class="fas fa-map-marker-alt"></i> Italy</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:Mayowa.lateef@studenti.unibas.it">Email</a></li>
+                <li><i class="fas fa-phone"></i> +39 3446865246</li>
+                <li><i class="fas fa-id-card"></i> <a href="https://orcid.org/0009-0006-8081-0864" target="_blank">ORCID</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/mayowalateef" target="_blank">Github</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mayowa-lateef-824008162" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        
+        <!-- Main content area -->
+        <div class="content">
+            <h1>Research Gallery</h1>
+            
+            <div class="research-intro">
+                <p>Welcome to my research gallery. Here you can explore visual representations of my work in Earth Observation, GIS, Remote Sensing, and Environmental Modeling.</p>
+            </div>
+            
+            <section class="gallery">
+                <!-- Images with direct filenames -->
+                <div class="gallery-item">
+                    <img src="171546605111.jpeg" alt="Earth Observation Research 1">
+                    <p class="gallery-caption">Earth Observation Analysis</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171573120710.jpeg" alt="Remote Sensing Data">
+                    <p class="gallery-caption">Remote Sensing Data Visualization</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171588712329.jpeg" alt="GIS Mapping">
+                    <p class="gallery-caption">GIS Spatial Analysis</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171655628495.jpeg" alt="Environmental Modeling">
+                    <p class="gallery-caption">Environmental Modeling Results</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171920973260.jpeg" alt="Field Research">
+                    <p class="gallery-caption">Field Research Data Collection</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="172108396594.jpeg" alt="Data Analysis">
+                    <p class="gallery-caption">Data Analysis Visualization</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="172618268059.jpeg" alt="Research Project">
+                    <p class="gallery-caption">Research Project Findings</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="172963502578.jpeg" alt="Environmental Data">
+                    <p class="gallery-caption">Environmental Data Collection</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173067518044.jpeg" alt="Geospatial Analysis">
+                    <p class="gallery-caption">Geospatial Analysis Results</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173090328379.jpeg" alt="Carbon Monitoring">
+                    <p class="gallery-caption">Carbon Monitoring Research</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173166826708.jpeg" alt="Satellite Imagery">
+                    <p class="gallery-caption">Satellite Imagery Processing</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173193415924.jpeg" alt="Climate Research">
+                    <p class="gallery-caption">Climate Research Analysis</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="174410843088.jpeg" alt="Earth Science">
+                    <p class="gallery-caption">Earth Science Research Project</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="174410843184.jpeg" alt="Environmental Assessment">
+                    <p class="gallery-caption">Environmental Impact Assessment</p>
+                </div>
+            </section>
+        </div>
     </div>
-  </footer>
 </body>
 </html>
