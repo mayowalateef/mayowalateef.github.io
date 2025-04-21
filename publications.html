@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Mayowa Lateef</title>
+    <title>Research - Mayowa Lateef</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -94,32 +94,40 @@
             padding-bottom: 10px;
         }
         
-        .publication-item {
-            margin-bottom: 40px;
+        .research-intro {
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
         
-        .publication-title {
-            font-size: 1.3em;
-            color: #0366d6;
-            margin-bottom: 10px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
         }
         
-        .publication-details {
-            margin-top: 0;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+            aspect-ratio: 4/3;
         }
         
-        .publication-citation {
-            margin-top: 10px;
-            margin-bottom: 5px;
+        .gallery img:hover {
+            transform: scale(1.03);
         }
         
-        .publication-link {
-            color: #0366d6;
-            text-decoration: none;
+        .gallery-item {
+            position: relative;
+            margin-bottom: 15px;
         }
         
-        .publication-link:hover {
-            text-decoration: underline;
+        .gallery-caption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
         }
         
         a {
@@ -166,32 +174,84 @@
         
         <!-- Main content area -->
         <div class="content">
-            <h1>Publications</h1>
+            <h1>Research Gallery</h1>
             
-            <div class="publication-item">
-                <a href="#" class="publication-title">An Assessment of Carbon Monoxide Emission in Nigeria and Recommendations for Sustainable Mitigation Strategies on Climate Impact</a>
-                <p class="publication-details">Published in <em>FUTA Journal of Innovation Management and Technology</em>, 2024</p>
-                <p class="publication-citation">Recommended citation: Lateef, M. B., Stephens, M. S. (2024). "An Assessment of Carbon Monoxide Emission in Nigeria and Recommendations for Sustainable Mitigation Strategies on Climate Impact." <em>FUTA Journal of Innovation Management and Technology</em></p>
+            <div class="research-intro">
+                <p>Welcome to my research gallery. Here you can explore visual representations of my work in Earth Observation, GIS, Remote Sensing, and Environmental Modeling.</p>
             </div>
             
-            <div class="publication-item">
-                <a href="#" class="publication-title">Remote Sensing of Extreme Heat Event in Nigeria: A Multi-Index Study</a>
-                <p class="publication-details">Published in <em>Springer Nature</em>, 2025</p>
-                <p class="publication-citation">Recommended citation: Lateef, M. B., Elegba, O., Adegoke, M. (2025). "Remote Sensing of Extreme Heat Event in Nigeria: A Multi-Index Study." <em>Springer Nature</em></p>
-            </div>
-            
-            <div class="publication-item">
-                <a href="#" class="publication-title">Spatiotemporal Dynamics of Climate Anomalies over Nigeria Using Predictive Modeling and Remote Sensing</a>
-                <p class="publication-details">Published in <em>Journal of African Earth Sciences</em>, Elsevier</p>
-                <p class="publication-citation">Recommended citation: Lateef, M. B., Oluwatoyin Seunn Ayanlade, Awodayo Oluwatoyin Adepiti, Ayansina Ayanlade. "Spatiotemporal Dynamics of Climate Anomalies over Nigeria Using Predictive Modeling and Remote Sensing." <em>Journal of African Earth Sciences</em>, Elsevier</p>
-            </div>
-            
-            <div class="publication-item">
-                <a href="https://dx.doi.org/10.2139/ssrn.4989375" target="_blank" class="publication-title">The Comparative Study of Machine Learning Models for Methane Levels and Anomalies over Nigeria, a Remote Sensing and Cloud Computation Approach</a>
-                <p class="publication-details">Published in <em>Remote Sensing of Environment</em>, Elsevier (2024)</p>
-                <p class="publication-citation">Recommended citation: Lateef, M. B. (2024). "The Comparative Study of Machine Learning Models for Methane Levels and Anomalies over Nigeria, a Remote Sensing and Cloud Computation Approach." <em>Remote Sensing of Environment</em>, Elsevier</p>
-                <a href="https://dx.doi.org/10.2139/ssrn.4989375" target="_blank" class="publication-link">https://dx.doi.org/10.2139/ssrn.4989375</a>
-            </div>
+            <section class="gallery">
+                <!-- Images with direct filenames -->
+                <div class="gallery-item">
+                    <img src="171546605111.jpeg" alt="Earth Observation Research 1">
+                    <p class="gallery-caption">Earth Observation Analysis</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171573120710.jpeg" alt="Remote Sensing Data">
+                    <p class="gallery-caption">Remote Sensing Data Visualization</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171588712329.jpeg" alt="GIS Mapping">
+                    <p class="gallery-caption">GIS Spatial Analysis</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171655628495.jpeg" alt="Environmental Modeling">
+                    <p class="gallery-caption">Environmental Modeling Results</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="171920973260.jpeg" alt="Field Research">
+                    <p class="gallery-caption">Field Research Data Collection</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="172108396594.jpeg" alt="Data Analysis">
+                    <p class="gallery-caption">Data Analysis Visualization</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="172618268059.jpeg" alt="Research Project">
+                    <p class="gallery-caption">Research Project Findings</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="172963502578.jpeg" alt="Environmental Data">
+                    <p class="gallery-caption">Environmental Data Collection</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173067518044.jpeg" alt="Geospatial Analysis">
+                    <p class="gallery-caption">Geospatial Analysis Results</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173090328379.jpeg" alt="Carbon Monitoring">
+                    <p class="gallery-caption">Carbon Monitoring Research</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173166826708.jpeg" alt="Satellite Imagery">
+                    <p class="gallery-caption">Satellite Imagery Processing</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="173193415924.jpeg" alt="Climate Research">
+                    <p class="gallery-caption">Climate Research Analysis</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="174410843088.jpeg" alt="Earth Science">
+                    <p class="gallery-caption">Earth Science Research Project</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="174410843184.jpeg" alt="Environmental Assessment">
+                    <p class="gallery-caption">Environmental Impact Assessment</p>
+                </div>
+            </section>
         </div>
     </div>
 </body>
