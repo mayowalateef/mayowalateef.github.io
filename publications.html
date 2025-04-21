@@ -1,60 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications - Mayowa Lateef</title>
-  <!-- Link to your main stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Mayowa Lateef</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+        
+        .navbar .site-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 50px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .main-content {
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar .title {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .contact-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .contact-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-links i {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .content h1 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .publication-item {
+            margin-bottom: 40px;
+        }
+        
+        .publication-title {
+            font-size: 1.3em;
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+        
+        .publication-details {
+            margin-top: 0;
+        }
+        
+        .publication-citation {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .publication-link {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .publication-link:hover {
+            text-decoration: underline;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Site Header with Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="cv.html">CV</a></li>
-      </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="site-title">Mayowa Lateef</a>
+        <div class="nav-links">
+            <a href="publications.html">Publications</a>
+            <a href="Research.html">Research</a>
+            <a href="Teaching.html">Teaching</a>
+            <a href="Cv.html">CV</a>
+        </div>
     </nav>
-    <h1>Publications</h1>
-  </header>
-
-  <main>
-    <!-- Abstract Publications -->
-    <section>
-      <h2>Publications (Abstract)</h2>
-      <ul>
-        <li>
-          <strong>Lateef, M. B., Stephens, M. S.</strong><br>
-          An Assessment of Carbon Monoxide Emission in Nigeria and Recommendations for Sustainable Mitigation Strategies on Climate Impact. <em>FUTA Journal of Innovation Management and Technology</em>, 2024.
-        </li>
-        <li>
-          <strong>Lateef, M. B., Elegba, O., Adegoke, M.</strong><br>
-          Remote Sensing of Extreme Heat Event in Nigeria: A Multi-Index Study. <em>Springer Nature</em>, 2025.
-        </li>
-        <li>
-          <strong>Lateef, M. B., Oluwatoyin Seunn Ayanlade, Awodayo Oluwatoyin Adepiti, Ayansina Ayanlade.</strong><br>
-          Spatiotemporal Dynamics of Climate Anomalies over Nigeria Using Predictive Modeling and Remote Sensing. <em>Journal of African Earth Sciences</em>, Elsevier.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Preprint Publications -->
-    <section>
-      <h2>Publications (Preprint)</h2>
-      <ul>
-        <li>
-          <strong>Lateef, M. B.</strong><br>
-          The Comparative Study of Machine Learning Models for Methane Levels and Anomalies over Nigeria, a Remote Sensing and Cloud Computation Approach. <em>Remote Sensing of Environment</em>, Elsevier (2024). <a href="https://dx.doi.org/10.2139/ssrn.4989375" target="_blank" rel="noopener">doi:10.2139/ssrn.4989375</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Site Footer -->
-  <footer>
-    <p>&copy; 2025 Mayowa Lateef</p>
-  </footer>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar with profile picture and contact info -->
+        <div class="sidebar">
+            <img src="IMG_9935.jpg" alt="Mayowa Lateef" class="profile-image">
+            <h2>Mayowa Lateef</h2>
+            <p class="title">Earth Observation Researcher<br>University of Basilicata, Italy</p>
+            
+            <ul class="contact-links">
+                <li><i class="fas fa-map-marker-alt"></i> Italy</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:Mayowa.lateef@studenti.unibas.it">Email</a></li>
+                <li><i class="fas fa-phone"></i> +39 3446865246</li>
+                <li><i class="fas fa-id-card"></i> <a href="https://orcid.org/0009-0006-8081-0864" target="_blank">ORCID</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/mayowalateef" target="_blank">Github</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mayowa-lateef-824008162" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        
+        <!-- Main content area -->
+        <div class="content">
+            <h1>Publications</h1>
+            
+            <div class="publication-item">
+                <a href="#" class="publication-title">An Assessment of Carbon Monoxide Emission in Nigeria and Recommendations for Sustainable Mitigation Strategies on Climate Impact</a>
+                <p class="publication-details">Published in <em>FUTA Journal of Innovation Management and Technology</em>, 2024</p>
+                <p class="publication-citation">Recommended citation: Lateef, M. B., Stephens, M. S. (2024). "An Assessment of Carbon Monoxide Emission in Nigeria and Recommendations for Sustainable Mitigation Strategies on Climate Impact." <em>FUTA Journal of Innovation Management and Technology</em></p>
+            </div>
+            
+            <div class="publication-item">
+                <a href="#" class="publication-title">Remote Sensing of Extreme Heat Event in Nigeria: A Multi-Index Study</a>
+                <p class="publication-details">Published in <em>Springer Nature</em>, 2025</p>
+                <p class="publication-citation">Recommended citation: Lateef, M. B., Elegba, O., Adegoke, M. (2025). "Remote Sensing of Extreme Heat Event in Nigeria: A Multi-Index Study." <em>Springer Nature</em></p>
+            </div>
+            
+            <div class="publication-item">
+                <a href="#" class="publication-title">Spatiotemporal Dynamics of Climate Anomalies over Nigeria Using Predictive Modeling and Remote Sensing</a>
+                <p class="publication-details">Published in <em>Journal of African Earth Sciences</em>, Elsevier</p>
+                <p class="publication-citation">Recommended citation: Lateef, M. B., Oluwatoyin Seunn Ayanlade, Awodayo Oluwatoyin Adepiti, Ayansina Ayanlade. "Spatiotemporal Dynamics of Climate Anomalies over Nigeria Using Predictive Modeling and Remote Sensing." <em>Journal of African Earth Sciences</em>, Elsevier</p>
+            </div>
+            
+            <div class="publication-item">
+                <a href="https://dx.doi.org/10.2139/ssrn.4989375" target="_blank" class="publication-title">The Comparative Study of Machine Learning Models for Methane Levels and Anomalies over Nigeria, a Remote Sensing and Cloud Computation Approach</a>
+                <p class="publication-details">Published in <em>Remote Sensing of Environment</em>, Elsevier (2024)</p>
+                <p class="publication-citation">Recommended citation: Lateef, M. B. (2024). "The Comparative Study of Machine Learning Models for Methane Levels and Anomalies over Nigeria, a Remote Sensing and Cloud Computation Approach." <em>Remote Sensing of Environment</em>, Elsevier</p>
+                <a href="https://dx.doi.org/10.2139/ssrn.4989375" target="_blank" class="publication-link">https://dx.doi.org/10.2139/ssrn.4989375</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
