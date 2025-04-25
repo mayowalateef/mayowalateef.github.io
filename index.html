@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,10 +111,28 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        .poster-text {
+            font-style: italic;
+            font-weight: bold;
+            font-size: larger;
+        }
+        
+        #poster img {
+            display: block;
+            align-items: center;
+            max-width: 600px;
+            max-height: 1400px;
+            height: auto;
+            margin: 1rem auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
     </style>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -125,7 +144,7 @@
             <a href="Cv.html">CV</a>
         </div>
     </nav>
-    
+
     <!-- Main Content -->
     <div class="main-content">
         <!-- Sidebar with profile picture and contact info -->
@@ -133,7 +152,7 @@
             <img src="IMG_9935.jpg" alt="Mayowa Lateef" class="profile-image">
             <h2>Mayowa Lateef</h2>
             <p class="title">Earth Observation Researcher<br>University of Basilicata, Italy</p>
-            
+
             <ul class="contact-links">
                 <li><i class="fas fa-map-marker-alt"></i> Italy</li>
                 <li><i class="fas fa-envelope"></i> <a href="mailto:Mayowa.lateef@studenti.unibas.it">Email</a></li>
@@ -143,44 +162,51 @@
                 <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mayowa-lateef-824008162" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
-        
+
         <!-- Main content area -->
         <div class="content">
             <h1>About me</h1>
             <p>
-                I am a researcher specializing in Earth Observation (EO) technologies, with core expertise in remote sensing,
-                GIS, and Astrophysics. Proficient in SNAP, QGIS, Python, and Google Earth Engine, I leverage satellite data to
-                monitor environmental changes and support decision-making. My research focuses on using EO for sustainable
-                development, addressing key challenges related to zero hunger, clean water, and climate action. I am deepening
-                my knowledge in atmospheric physics, meteorology, GIS fundamentals, remote sensing (optical and microwave
-                bands), sensor technology, and space vehicle systems for Earth observation. My passion lies in applying EO
-                technologies to support scientists, enhance research methodologies, and raise public awareness of global
-                sustainability challenges.
+                I am a researcher specializing in Earth Observation (EO) technologies, with core expertise in remote sensing, GIS, and Astrophysics. Proficient in SNAP, QGIS, Python, and Google Earth Engine, I leverage satellite data to monitor environmental changes
+                and support decision-making. My research focuses on using EO for sustainable development, addressing key challenges related to zero hunger, clean water, and climate action. I am deepening my knowledge in atmospheric physics, meteorology,
+                GIS fundamentals, remote sensing (optical and microwave bands), sensor technology, and space vehicle systems for Earth observation. My passion lies in applying EO technologies to support scientists, enhance research methodologies, and
+                raise public awareness of global sustainability challenges.
             </p>
-            
+
             <h2>My research addresses three overarching areas:</h2>
-            
+
             <div class="research-question">
                 <h3>1. Climate Change Monitoring and Analysis</h3>
                 <p>
-                    I examine climate anomalies and extreme weather events using remote sensing technology and multi-index approaches. My work includes the assessment of carbon monoxide emissions in Nigeria and developing recommendations for sustainable mitigation strategies to reduce climate impact.
+                    I examine climate anomalies and extreme weather events using remote sensing technology and multi-index approaches. My work includes the assessment of carbon monoxide emissions in Nigeria and developing recommendations for sustainable mitigation strategies
+                    to reduce climate impact.
                 </p>
             </div>
-            
+
             <div class="research-question">
                 <h3>2. Advanced Data Processing for Environmental Applications</h3>
                 <p>
-                    My research explores machine learning applications for Earth observation, particularly in the detection and analysis of methane levels and anomalies. I utilize cloud computation approaches and various remote sensing techniques to process and analyze satellite imagery.
+                    My research explores machine learning applications for Earth observation, particularly in the detection and analysis of methane levels and anomalies. I utilize cloud computation approaches and various remote sensing techniques to process and analyze satellite
+                    imagery.
                 </p>
             </div>
-            
+
             <div class="research-question">
                 <h3>3. Sustainable Development through Geospatial Technology</h3>
                 <p>
-                    I am passionate about applying EO technologies to support scientists, enhance research methodologies, and raise public awareness of global sustainability challenges. My work aims to bridge the gap between technical geospatial capabilities and practical applications for sustainable development.
+                    I am passionate about applying EO technologies to support scientists, enhance research methodologies, and raise public awareness of global sustainability challenges. My work aims to bridge the gap between technical geospatial capabilities and practical
+                    applications for sustainable development.
                 </p>
+            </div>
+
+            <div id="poster">
+                <p class="poster-text">
+                    Here's a quick peek at my poster. Looking forward to insightful discussions!
+                </p>
+                <img src="image/Postal Presentation.png" alt="Postal Presentation">
             </div>
         </div>
     </div>
 </body>
+
 </html>
